@@ -254,12 +254,6 @@ ul{
 .about-section {
     background-color: var(--dark-light);
 }
-.about-section1 {
-    background-color: rgb(42, 66, 56)
-}
-.about-section2 {
-    background-color: rgb(5, 5, 5)
-}
 .about-img, .about-text {
     width: 50%;
     padding: 15px;
@@ -459,7 +453,7 @@ ul{
 }
 /* footer */
 .footer-section {
-    background-image: url("image/Bg21.jpg");
+    background-image: url("image/bg23.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

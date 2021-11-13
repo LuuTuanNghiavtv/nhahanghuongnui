@@ -71,6 +71,27 @@ function showadress (list){
     }
     autoBox.innerHTML = listData
 }
+
+
+
+let recomentlist =[
+    "Hà Nội",
+    "Hải Phòng",
+    "Hà Giang",
+    "Hải Dương",
+    "Hà Tĩnh",
+    "Hà Nam",
+    "Hồ Chí Minh",
+    "Nghệ An",
+    "Phú Quốc",
+    "Phú Thọ",
+    "Nha Trang",
+    "Quảng Bình",
+    "Quảng Trị",
+    "Quảng Nam",
+    "Đà Nẵng",
+    "Đà Lạt",
+]                        
 //-----------------Animation-----------
 AOS.init();
 

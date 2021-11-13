@@ -4,124 +4,601 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="mainstyle.css">
-    <title>Website - Ivy</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Wellcome Back</title>
 </head>
 <body>
-    <secsion class="top">
-        <div class="container">
-            <div class="row">
-                <div class="top-logo">
-                    <img src="image/logo.png" alt="">
+<!--Header - start-->
+<header class="header">
+    <div class="container">
+        <div class="row justify-content-between header-padding">
+            <div class="logo">
+               <a href="#"><img width="100px" src="image/LOGO 1.png" alt="Ảnh Logo"></a>
+            </div>
+            <button class="nav-toggler">
+                <span></span>
+            </button>
+            <nav class="nav">
+                <ul>
+                    <li class="nav-item"><a href="#about">giới thiệu</a></li>
+                    <li class="nav-item"><a href="#sách">chế biến ẩm thực</a></li>
+                    <li class="nav-item"><a href="#ẩm thực">Ẩm thực Tây Bắc</a></li>
+                    <li class="nav-item"><a href="#Menu">Menu</a></li>
+                    <li class="nav-item"><a href="#Testimonial">Lời chứng thực</a></li>
+                    <li class="nav-item"><a href="#Team">Đội Ngũ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>  
+</header>
+<!--Header - end-->
+<section class="home-section" id="home">
+    <div class="home-section-bg">
+
+    </div>
+    <div class="container">
+        <div class="row min-h-100">
+            <div class="home-text" data-aos="fade-up" data-aos-duration="3000">
+                <h1>Nhà hàng Hương Núi</h1>
+                <p>Đẳng cấp lên ngôi, vị ngọt đôi môi</p>
+                <a href="#menu" class="btn">Menu</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Home Section begin -->
+<!-- About-Section-begin -->
+<section class="about-section2 section-padding" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-title="giới thiệu">Giới thiệu về nhà hàng Hương Núi</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-text" data-aos="fade-right"data-aos-duration="3000" >
+                <h3>Nhà hàng Hương Núi xin kính chào quý khách</h3>
+                <p>Xin chào tất cả quý vị đã ghé thăm trang web chính thức của Hương Rừng Núi. Hương Núi quán được thành lập và chính thức hoạt động vào đầu tháng 10 năm 2021 nhưng đã để ấn tượng rất đặt biệt với thực khách khi đến dùng.</p>
+                <p>Nhà hàng Hương Núi của chúng tôi là nơi hội tụ những tinh hoa, đặc biệt nhất của hương vị rừng núi. Khi quý vị thưởng thức tại Hương Núi quán, quý vị sẽ cảm nhận được sự thơm ngon, ngây chất hương liệu vùng Tây Bắc nói chung. Hiện tại Nhà Hàng Hương Núi có thực đơn lên tới 30 món được chế biến từ các thực phẩm rừng núi, chắc chắn khi quý vị ghé thưởng thức sẽ không bao giờ quên được hương vị của món ăn nơi đây. Hãy cùng khám phá chúng tôi nào quý vị.</p>
+                <a href="#menu" class="btn">Xem menu</a>
+            </div>                            
+            <div class="about-img" data-aos="fade-left"data-aos-duration="3000" >
+                <div class="img-box">
+                    <h2></h2>
+                    <img src="image/SALE 3.png" alt="">
                 </div>
-                <div class="top-menu-items">
-                    <ul>
-                        <li>Nữ
-                            <ul class="top-menu-item">
-                                <li>
-                                    <a href="">Hàng nữ mới về</a>
-                                </li>
-                                <li>
-                                    <a href="">Hướng dương đón nắng</a>
-                                </li>
-                                <li>
-                                    <a href="">Áo nữ</a>
-                                </li>
-                                <li>
-                                    <a href="">Váy nữ</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Nam
-                            <ul class="top-menu-item">
-                                <li>
-                                    <a href="">Hàng Nam mới về</a>
-                                </li>
-                                <li>
-                                    <a href="">Áo nam</a>
-                                </li>
-                                <li>
-                                    <a href="">Váy nam</a>
-                                </li>
-                                <li>
-                                    <a href="">Quần nam</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Trẻ em</li>
-                        <li>Flast sale</li>
-                        <li>Hot items</li>
-                        <li>Bộ sưu tập</li>
-                        <li>Tin tức</li>
-                        <li>Thông tin</li>
-                    </ul>
-                </div>
-                <div class="top-menu-icons">
-                    <ul>
-                        <li>
-                            <input type="text" placeholder="tìm kiếm">
-                            <i class="fas fa-search"></i>
-                        </li>
-                        <li>
-                            <i class="fas fa-user-secret"></i>
-                        </li>
-                        <li>
-                            <i class="fas fa-shopping-cart"></i>
-                        </li>
-                    </ul>
+                <div class="wraper">
+                    <div class="search-content-items row">
+                        <div class="search-content-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input class="input-search" type="text" placeholder="Bạn đến từ đâu">
+                            <div class="autobox">
+                                <li>Hà Nội</li>
+                                <li>Hải Phòng</li>
+                                <li>Hà Giang</li>
+                                <li>Nghệ An</li>
+                                <li>Phú Quốc</li>
+                                <li>Phú Thọ</li>
+                            </div>
+                        </div>
+                        <div class="search-content-item">
+                            <i class="far fa-calendar-alt"></i>
+                            <input id="myID" type="datetime-local" placeholder="Ngày đến">
+                        </div>
+                        <div class="search-content-item">
+                            <i class="far fa-calendar-alt"></i>
+                            <input id="myID" type="datetime-local"  placeholder="Ngày đi">
+                        </div>
+                        <div class="search-content-item">
+                            <i class="fas fa-user-check"></i>
+                            <input type="value" placeholder="Số người">
+                        </div>
+                        <div class="search-content-item">
+                            <button>Đặt Bàn</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </secsion>
-    <!-- -----------------------SLlDER---------------------------------------------- -->
-    <section class="sliders">
-            <div class="aspect-ratio-169">
-                <img src="image/slide1.jpg" alt="">
-                <img src="image/slide2.jpg" alt="">
-                <img src="image/slide3.jpg" alt="">
-            </div>
-            <div class="dot-container">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-           </div>
-    </section>
-    <!-- -------------------------Footer -->
-    <section class="footer">
-        <div class="footer-container">
-            <p>Tải ứng dụng IVY moda</p>
-            <div class="app-google">
-                <a href=""><img src="image/appstore.jpg" alt=""></a>
-                <a href=""> <img src="image/googleplay.jpg" alt=""></a>
-            </div>
-            <p>Nhận bản tin IVY moda</p>
-            <div class="input-email">
-                <input type="text" placeholder="Nhập email của bạn">
-                <i class="fas fa-arrow-left"></i>
-            </div>
-            <div class="footer-items">
-                <li><a href=""><img src="image/dathongbao.png" alt=""></a></li>
-                <li><a href="">Liên hệ</a></li>
-                <li><a href="">Tuyển dụng</a></li>
-                <li><a href="">Giới thiệu</a></li>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a><a href=""><i class="fab fa-youtube"></i></a></li>
-            </div>
-            <div class="footer-text">
-                Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650 <br>
-Địa chỉ đăng ký: Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam - 0243 205 2222 <br>
-Đặt hàng online : 0246 662 3434 .
-            </div>
-            <div class="footer-bottom">
-                ©Ivymoda All rights reserved
+    </div>                      
+</section>
+<section class="about-section section-padding" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="section-title" id="ẩm thực" data-aos="fade-up">
+                <h2 data-title="Ẩm thực Tây Bắc">mỗi tuần một món ngon</h2>
             </div>
         </div>
+        <div class="row">
+            <div class="about-text" data-aos="fade-right"data-aos-duration="3000" >
+                <h3>Chân giò rút xương quay lá móc mật - tinh hoa ẩm thực Tây Bắc</h3>
+                <p>Nhà hàng Hương Núi xin được giới thiệu đến quý khách hàng món “Chân giò rút xương quay lá móc mật” - một trong những món ăn đặc sắc và mang đậm hương vị của vùng núi Tây Bắc. Tuy rằng món ăn này đã xuất hiện ở nhiều nhà hàng trên phạm vi toàn quốc, nhưng chỉ khi được thưởng thức nó tại Hương Núi cùng với không khí Tây Bắc, ta mới có thể cảm nhận được toàn bộ cái chất của món ăn này.</p>
+                <p>Ngay ở giữa các đô thị sầm uất như Hà Nội hay TP. Hồ Chí Minh, cũng không quá khó để bắt gặp những dàn quay chân giò vàng óng, thơm nức mũi cùng với biển quảng cáo chuẩn gia vị Tây Bắc. Dần dần, món ăn này đã trở thành một đối thủ cạnh tranh đáng gờm đối với các món ăn khác như vịt quay, heo quay,...</p>
+                <p>Không giống với những nậm pịa hay thắng cố, chân giò rút xương quay lá mắc mật là một món ăn dễ học, dễ chế biến. Nguyên liệu đơn giản chỉ bao gồm chân giò, lá móc mật và các gia vị đơn giản khác có thể biến tấu tuỳ ý khiến bất cứ ai thành thạo việc nấu nướng cũng có thể chế biến được. Chân giò quay lá móc mật không có một câu chuyện quá thú vị đằng sau sự hình thành của nó, đây là một món ăn đơn giản có nguồn gốc từ tỉnh Lạng Sơn, được dùng chủ yếu với rau rừng và mắm tôm.</p>
+                <p>Chân giò rút xương quay lá móc mật được ăn kèm với mắm tôm và rau rừng</p>
+                <p>Tuy nhiên, để có thể hợp khẩu vị với người dân lân cận, cũng như việc vận chuyển những gia vị chuẩn Tây Bắc gặp nhiều khó khăn, nhiều nhà hàng đã phải biến tấu, thay đổi các loại gia vị sao cho phù hợp với hoàn cảnh. Cách này tuy có thể đảm bảo chi phí sản xuất nhưng lại không đem lại được trọn vẹn hương vị của món chân giò quay Tây Bắc, khiến nó trở thành một món chân giò quay đơn giản bình thường.</p>
+                <p>Mới đây, nhà hàng Hương Núi đã bổ sung món Chân giò rút xương quay lá móc mật vào thực đơn. Khi quý khách đến với nhà hàng Hương Núi, chúng tôi xin được đảm bảo hương vị món chân giò quay lá móc mật sẽ luôn chuẩn vị Tây Bắc. Với công thức chuẩn được truyền dạy bởi một bậc thầy tại Lạng Sơn, nhà hàng Hương Núi tự tin có thể truyền đạt tới 99% hương vị gốc của món ăn nổi tiếng này đến với quý khách. Hiện tại món chân giò quay rút xương đã có thể được đặt hàng tại mọi cơ sở của nhà hàng Hương Núi. Quý khách hãy nhớ ghé qua thưởng thức nhé!</p>                
+                <a href="#menu" class="btn">Xem menu</a>
+            </div>                       
+            <div class="about-img" data-aos="fade-left"data-aos-duration="3000" >
+                <div class="img-box">
+                    <h2>Món Ngon Tuần Này</h2>
+                    <img src="image/T1.png" alt="">
+                </div>                
+            </div>
+        </div>
+    </div>                      
+</section>
+<section class="about-section1 section-padding" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="section-title" id="sách" data-aos="fade-up">
+                <h2 data-title="chế biến ẩm thực">Thắng cố ngựa</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-text2" data-aos="fade-right"data-aos-duration="3000" >
+                <h3></h3>
+                <p>Hà Giang được coi là vùng đất nổi tiếng bởi ngoài cảnh đẹp thì còn có nhiều món ngon để thưởng thức. Học cách nấu thắng cố ngựa chuẩn vị dưới đây nhé!</p>
+                <p>Là món ăn đặc trưng mang nhiều nét văn hóa truyền thống của dân tộc vùng H’mông. Món ăn có nguồn gốc từ Trung Quốc sau đó mới du nhập vào Việt Nam. Được biết đến qua cách nấu của người dân vùng cao Tây Bắc.</p>
+                <p>Món ăn này còn là tên gọi khác của thịt ngựa. Sau này, người ta còn dùng thịt lợn, thịt bò hoặc thịt trâu để chế biến món ăn ngon này. Món ăn này có từ rất lâu đời, khoảng 200 năm trước khi người H’Mông chuyển lên Tây Bắc cư trú.</p>
+                <p>Có thể nói thắng cố ngựa là món ăn thơm ngon nổi tiếng được rất nhiều du khách yêu thích khi đến đây du lịch. So với các món thắng cố khác, món ăn Hà Giang này có hương vị rất riêng. Chính vì điều này đã tạo nên ấn tượng đặc biệt cho du khách khi được thưởng thức.</p>
+                <a href="#menu" class="btn">Xem menu</a>
+            </div>                        
+            <div class="about-video" data-aos="fade-left"data-aos-duration="3000" >                
+                <video width="160%" height="370px" controls>
+                    <h2></h2>
+                    <source src="image/Hướng dẫn chi tiết cách nấu thắng cố ngựa - Trâu - Bò cực đơn giản - Hương Vị Tây Bắc.mp4">                    
+                </video>                
+            </div>            
+        </div>
+    </div>                      
+</section>                                                   
+<!-- About-Section-end -->
+<!-- Menu-Section-begin -->
+<section class="menu-section section-padding" id="Menu">
+    <div class="container">
+        <div class="row">
+            <div class="section-title" id="menu" id="xem menu" data-aos="fade-up">
+                <h2 data-title="order now">our menu</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-taps">
+                <button type="button" class="menu-tap-item active" data-target="#Lunch" data-aos="fade-up">Thịt/ Cá/ Chất đạm</button>
+                <button type="button" class="menu-tap-item" data-target="#Dinner" data-aos="fade-up">Rau quả</button>
+                <button type="button" class="menu-tap-item" data-target="#Drinks" data-aos="fade-up">Tinh bột</button>
+                <button type="button" class="menu-tap-item" data-target="#Desserts" data-aos="fade-up">Đồ uống</button>
+            </div>
+        </div>
+        <div class="row menu-tap-content active" id="Lunch">
+            <div class="menu-item" data-aos="fade-right"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m1.jpg" alt="">
+                    <h3>Nhộng ong rừng</h3>
+                </div>
+                <div class="menu-item-price">
+                    400.000 - 500.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m2.jpg" alt="">
+                    <h3>Cá Bống vùi tro</h3>
+                </div>
+                <div class="menu-item-price">
+                    100.000 - 120.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m3.jpg" alt="">
+                    <h3>Bê chao mộc châu</h3>
+                </div>
+                <div class="menu-item-price">
+                    150.000 - 180.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m4.jpg" alt="">
+                    <h3>Thắng cố bắc hà</h3>
+                </div>
+                <div class="menu-item-price">
+                    150.000 - 500.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m5.jpg" alt="">
+                    <h3>Pa pỉnh tộp</h3>
+                </div>
+                <div class="menu-item-price">
+                    130.000 - 150.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m6.jpg" alt="">
+                    <h3>Thịt lợn cắp nách</h3>
+                </div>
+                <div class="menu-item-price">
+                    150.000 - 300.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m7.jpg" alt="">
+                    <h3>Cá nướng sông đà</h3>
+                </div>
+                <div class="menu-item-price">
+                    50.000 - 400.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m8.jpg" alt="">
+                    <h3>Khâu nhục</h3>
+                </div>
+                <div class="menu-item-price">
+                    300.000 - 320.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m9.jpg" alt="">
+                    <h3>Nậm pịa</h3>
+                </div>
+                <div class="menu-item-price">
+                    150.000 - 200.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m10.jpg" alt="">
+                    <h3>Cá hồi thác bạc</h3>
+                </div>
+                <div class="menu-item-price">
+                    200.000 - 600.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m11.jpg" alt="">
+                    <h3>Thịt gà đen tủa chúa</h3>
+                </div>
+                <div class="menu-item-price">
+                    200.000 - 600.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m12.jpg" alt="">
+                    <h3>Dế chiên giòn</h3>
+                </div>
+                <div class="menu-item-price">
+                    150.000 VNĐ/ phần
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m13.jpg" alt="">
+                    <h3>Thịt lợn muối chua</h3>
+                </div>
+                <div class="menu-item-price">
+                    150.000 VNĐ/ phần
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m14.jpg" alt="">
+                    <h3>thịt trâu lá luồm</h3>
+                </div>
+                <div class="menu-item-price">
+                    80.000 - 100.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-right"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/m15.jpg" alt="">
+                    <h3>chả cuốn lá bưởi</h3>
+                </div>
+                <div class="menu-item-price">
+                    150.000 VNĐ/ phần
+                </div>
+            </div>
+        </div>
+        <div class="row menu-tap-content" id="Dinner">
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/r1.jpg" alt="">
+                    <h3>nộm da trâu</h3>
+                </div>
+                <div class="menu-item-price">
+                    70.000 - 80.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/r2.jpg" alt="">
+                    <h3>rêu đá nướng</h3>
+                </div>
+                <div class="menu-item-price">
+                    20.000 - 30.000 VNĐ/ nắm (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/r4.jpg" alt="">
+                    <h3>Bắp cải cuốn nhót</h3>
+                </div>
+                <div class="menu-item-price">
+                    50.000 VNĐ
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/r3.jpg" alt="">
+                    <h3>Măng đắng lào cai</h3>
+                </div>
+                <div class="menu-item-price">
+                    150.000 VNĐ/kg
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <img style="width: 100px" src="image/r5.jpg" alt="">
+                    <h3>Nấm hương rừng sapa</h3>
+                </div>
+                <div class="menu-item-price">
+                    250.000 VNĐ/kg
+                </div>
+            </div>
+
+        </div>
+        <div class="row menu-tap-content"id="Drinks">
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/v1.jpg" alt="">
+                    <h3>xôi ngũ sắc</h3>
+                </div>
+                <div class="menu-item-price">
+                    20.000 - 30.000 VNĐ (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/v2.jpg" alt="">
+                    <h3>cháo ấu tẩu</h3>
+                </div>
+                <div class="menu-item-price">
+                    30.000 - 50.000 VNĐ/ tô (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/v3.jpg" alt="">
+                    <h3>Cơm lam bắc mê</h3>
+                </div>
+                <div class="menu-item-price">
+                    150.000 - 200.000 VNĐ/ phần (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/v4.jpg" alt="">
+                    <h3>Phở chua</h3>
+                </div>
+                <div class="menu-item-price">
+                    35.000 - 40.000 VNĐ/ phần (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/v5.jpg" alt="">
+                    <h3>bánh dày người mông</h3>
+                </div>
+                <div class="menu-item-price">
+                    50.000 VNĐ/ phần
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/v6.jpg" alt="">
+                    <h3>bánh trưng đen người lò</h3>
+                </div>
+                <div class="menu-item-price">
+                    50.000 - 80.000 VNĐ/ cái (nhỏ/ lớn)
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/v7.jpg" alt="">
+                    <h3>khoai tím lục yên</h3>
+                </div>
+                <div class="menu-item-price">
+                    50.000 VNĐ/ phần
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/v8.jpg" alt="">
+                    <h3>bánh chuối lục yên</h3>
+                </div>
+                <div class="menu-item-price">
+                    50.000 VNĐ/ phần
+                </div>
+            </div>
+        </div>
+        <div class="row menu-tap-content"id="Desserts">
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/f1.jpg" alt="">
+                    <h3>rượu chít điện biên</h3>
+                </div>
+                <div class="menu-item-price">
+                    1.000.000 - 1.100.000 VNĐ/ lít
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/f2.jpg" alt="">
+                    <h3>rượu cần</h3>
+                </div>
+                <div class="menu-item-price">
+                    200.000 - 290.000 VNĐ/ lít
+                </div>
+            </div>
+            <div class="menu-item"data-aos="fade-left"data-aos-duration="3000">
+                <div class="menu-item-title">
+                    <img style="width: 180px" src="image/f3.jpg" alt="">
+                    <h3>chè san tuyết suối giàng</h3>
+                </div>
+                <div class="menu-item-price">
+                    1.100.000 - 2.800.000 VNĐ/ kg (tùy loại)
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
+<!-- Menu-Section-end -->
+<!-- Testimonis-Section -->
+<section class="testimony section-padding" id="Testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-title="testimony">Some Feedback</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="testimony-item" data-aos="flip-left"data-aos-duration="3000">
+                <div class="testimony-author">
+                    <div class="testimony-name">
+                        <h3>Trần Duy</h3>
+                        <span>Chuyên gia ẩm thực</span>
+                    </div>
+                    <div class="testimony-img">
+                        <img src="image/ch1.jpg" alt="">
+                    </div>
+                </div>
+                <p>Đặc sản Tây Bắc trông trông đơn giản nhưng vẫn đạt độ tinh tế, nhìn khá bắt mắt, bài trí đa dạng, ấn tượng, có hương vị riêng. Không chỉ vậy, ở đây có các món ăn chay phong phú, thanh đạm giúp thay đổi khẩu vị và tốt cho sức khoẻ.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimony-item" data-aos="fade-up"data-aos-duration="3000">
+                <div class="testimony-author">
+                    <div class="testimony-name">
+                        <h3>Lê Thúy Hằng</h3>
+                        <span>Hiệp hội Văn hóa ẩm thực Việt Nam</span>
+                    </div>
+                    <div class="testimony-img">
+                        <img src="image/Ch2.jpg" alt="">
+                    </div>
+                </div>
+                <p>Đối với ẩm thực chay ở Tây Bắc đã quy tụ được hai yếu tố luôn làm hài lòng thực khách và đạt được đỉnh cao giá trị của ẩm thực mang lại là “lành” và “ngon”. Nếu ngon mà không lành thì rất nguy hiểm cho sức khỏe, nhưng lành mà không ngon thì khó có thể gọi là nghệ thuật ẩm thực.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="testimony-item"data-aos="flip-right"data-aos-duration="3000">
+                <div class="testimony-author">
+                    <div class="testimony-name">
+                        <h3>Hồ Đắc Thiếu Anh</h3>
+                        <span>Chủ nhiệm CLB Nghệ nhân Ẩm thực Dân gian và Đương đại Việt Nam</span>
+                    </div>
+                    <div class="testimony-img">
+                        <img src="image/ch4.jpg" alt="">
+                    </div>
+                </div>
+                <p>Đến với Nhà hàng Hương Núi, du khách ngưỡng mộ nét văn hóa ẩm thực độc đáo, cả hương, vị và sắc màu; ngũ hành, hài hòa âm dương tiềm ẩn trong sự khéo léo và dụng công của các món ăn.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Team Section begin -->
+<section class="team-section section-padding" id="Team">
+    <div class="container">
+        <div class="row">
+            <div class="section-title"data-aos="fade-up">
+                <h2 data-title="testimony">Our Chefs</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="team-item"data-aos="zoom-in"data-aos-duration="3000">
+                <img src="image/BT.jpg" alt="">
+                <div class="team-item-info">
+                    <h3>Đào Ngọc Toàn</h3>
+                    <p>Bếp trưởng</p>
+                </div>
+            </div>
+            <div class="team-item"data-aos="zoom-in" data-aos-duration="3000">
+                <img src="image/LT2.png" alt="">
+                <div class="team-item-info">
+                    <h3>nhung xinh</h3>
+                    <p>trưởng lễ tân</p>
+                </div>
+            </div>
+            <div class="team-item"data-aos="zoom-in"data-aos-duration="3000">
+                <img src="image/TT.jpg" alt="">
+                <div class="team-item-info">
+                    <h3>vũ bình</h3>
+                    <p>Truyền thông - maketting</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-section -->
+<section class="footer-section" id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="footer-item">
+                <h3>Địa chỉ</h3>
+                <p>336, Nguyễn Chí Thanh <br> Thanh Xuân, Hà Nội</p>
+            </div>
+            <div class="footer-item">
+                <h3>Giờ mở cửa</h3>
+                <p>09:30-23:00 <br> Các ngày trong tuần</p>
+            </div>
+            <div class="footer-item">
+                <h3>Liện hệ</h3>
+                <p>Phone: 0973999949 <br> Email: nguyenns@ABC,com</p>
+                <div class="social-item">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="copyright">
+                <p>©2021. Toàn bộ bản quyền thuộc nhóm 5, Viện đào tạo Báo chí và Truyền thông SJC</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-
+  <!---------------------------------Script------------------  -->
 <script src="script.js"></script>
-
-
-
 </body>
-</html>                      
+</html>                       
